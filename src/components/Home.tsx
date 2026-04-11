@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Button, ButtonGroup, Flex, Stack, Text, Icon } from "@chakra-ui/react";
+import { Button, ButtonGroup, Flex, Stack, Text, Icon, useBreakpointValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import BackgroundVid from "../styles/BackgroundVid";
@@ -22,11 +22,12 @@ export default function Home() {
     };
   }, []); 
 
+  const isLargeDevice = useBreakpointValue({ base: false, lg: true });
 
   
   return (
     <div id="top">
-        <BackgroundVid src="/images/header.webm"/>
+        <BackgroundVid src="/images/header_transparent.webm"/>
         <BlobBg color="linear-gradient(222deg,rgba(63, 136, 197, 1) 0%, rgba(211, 180, 219, 1) 51%, rgba(255, 196, 197, 1) 100%)" 
               w={650} 
               h={750}

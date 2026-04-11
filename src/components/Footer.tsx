@@ -25,7 +25,7 @@ export default function Footer() {
       justifyContent={"center"}
       alignItems={"center"}
       flexDir={"column"}
-      pb="2rem"
+      py="2rem"
       >
       <Text variant="type" color="blue" fontSize={{base: ".75rem", lg: ".5rem"}} textAlign={"center"} zIndex={2}>
         designed + created with ♥<br></br>

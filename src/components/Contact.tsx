@@ -61,7 +61,7 @@ export default function Contact() {
             </ChakraLink>
           </Tooltip>
           </Flex>
-          <Flex w={{base: "100%", lg: "50%"}}>
+          <Flex w={{base: "100%", lg: "50%"}} display={{lg: "flex", base: "none"}}>
                 <video
               loop
               autoPlay
