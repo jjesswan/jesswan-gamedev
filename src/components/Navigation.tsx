@@ -1,12 +1,9 @@
 import { Box, Flex, Icon } from "@chakra-ui/react";
-import React from "react";
-import { Link, Link as ReactRouterLink } from "react-router-dom";
-import { Link as ChakraLink, LinkProps } from "@chakra-ui/react";
+import { Link} from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { GoHome, GoProjectRoadmap, GoStack, GoMail } from "react-icons/go";
+import { RiHome2Line, RiStackLine, RiFileListLine, RiMailOpenLine } from "react-icons/ri";
+
 import ResumePDF from "../documents/Jessica_Wan_Resume.pdf";
-
-
 
 export default function Navbar() {
   const size = 4;
@@ -29,7 +26,7 @@ export default function Navbar() {
           <HashLink smooth to="/#top">
             
               <Icon
-                as={GoHome as any}
+                as={RiHome2Line as any}
                 boxSize={size}
                 fill={"white"}
                 mb=".5rem"
@@ -38,7 +35,7 @@ export default function Navbar() {
      
           <HashLink smooth to="/#work">
               <Icon
-                as={GoStack as any}
+                as={RiStackLine as any}
                 boxSize={size}
                 fill={"white"}
                 mb=".5rem"
@@ -46,7 +43,7 @@ export default function Navbar() {
           </HashLink>
           <Link href={ResumePDF} target="_blank">
               <Icon
-              as={GoProjectRoadmap as any}
+              as={RiFileListLine as any}
               boxSize={size}
               fill={"white"}
               mb=".5rem"
@@ -54,7 +51,7 @@ export default function Navbar() {
           </Link>
           <HashLink smooth to="/#contact">
               <Icon
-                as={GoMail as any}
+                as={RiMailOpenLine as any}
                 boxSize={size}
                 fill={"white"}
                 mb=".5rem"

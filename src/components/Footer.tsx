@@ -1,19 +1,7 @@
 import {
-  Box,
-  Grid,
-  GridItem,
   Text,
-  Button,
-  Icon,
-  Divider,
   Flex,
 } from "@chakra-ui/react";
-import {
-  TiSocialLinkedinCircular,
-  TiSocialGithubCircular,
-} from "react-icons/ti";
-import { Link } from "react-router-dom";
-
 
 export default function Footer() {
   return (

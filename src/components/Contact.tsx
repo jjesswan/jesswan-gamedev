@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import { Button, ButtonGroup, Flex, Icon, Text, Tooltip, Link as ChakraLink} from "@chakra-ui/react";
+import { Button, ButtonGroup, Flex, Icon, Text, Tooltip, Link as ChakraLink, IconButton} from "@chakra-ui/react";
 import {
   TiSocialLinkedinCircular,
   TiSocialGithubCircular,
@@ -7,15 +6,16 @@ import {
   TiSocialInstagramCircular
 } from "react-icons/ti";
 import { GoMail } from "react-icons/go";
-import BackgroundVid from "../styles/BackgroundVid";
-
+import { RiMailOpenLine, RiGithubLine, RiLinkedinBoxLine, RiInstagramLine } from "react-icons/ri";
+import BlobBg from "../styles/BlobBg";
 
 
 export default function Contact() {
+  const boxSize = 10;
   return (
-    <div id="contact">
-         <Flex
-         flexDir="column"
+    <div id="contact" style={{ position: "relative", zIndex: 1 }}>
+        <Flex
+          flexDir="column"
           justifyContent={"center"}
           alignItems={"center"}
           gap="1rem"
@@ -24,39 +24,33 @@ export default function Contact() {
             Let's get in touch!
           </Text>
           <Flex justifyContent={"center"} gap="1rem">
-          <Tooltip label="Email" placement="bottom" hasArrow shouldWrapChildren> 
+          <Tooltip label="Email" placement="bottom" hasArrow> 
             <ChakraLink href="mailto:jessica_wan@alumni.brown.edu" isExternal>
                <Icon
-                as={GoMail as any}
-                boxSize={12}
+                as={RiMailOpenLine as any}
+                boxSize={boxSize}
                 fill={"blue"}
+                _hover={{ fill: "lightblue" }}
               ></Icon>
             </ChakraLink>
           </Tooltip>
-          <Tooltip label="LinkedIn" placement="bottom" hasArrow shouldWrapChildren> 
+          <Tooltip label="LinkedIn" placement="bottom" hasArrow> 
             <ChakraLink href="https://www.linkedin.com/in/jessicawan02/" isExternal>
                <Icon
-                as={TiSocialLinkedinCircular as any}
-                boxSize={12}
+                as={RiLinkedinBoxLine as any}
+                boxSize={boxSize}
                 fill={"blue"}
+                _hover={{ fill: "lightblue" }}
               ></Icon>
             </ChakraLink>
           </Tooltip>
-          <Tooltip label="GitHub" placement="bottom" hasArrow shouldWrapChildren> 
+          <Tooltip label="GitHub" placement="bottom" hasArrow> 
             <ChakraLink href="https://github.com/jjesswan" isExternal>
                <Icon
-                as={TiSocialGithubCircular as any}
-                boxSize={12}
+                as={RiGithubLine as any}
+                boxSize={boxSize}
                 fill={"blue"}
-              ></Icon>
-            </ChakraLink>
-          </Tooltip>
-          <Tooltip label="Instagram" placement="bottom" hasArrow shouldWrapChildren> 
-            <ChakraLink href="https://www.instagram.com/jjessiart/" isExternal>
-               <Icon
-                as={TiSocialInstagramCircular as any}
-                boxSize={12}
-                fill={"blue"}
+                _hover={{ fill: "lightblue" }}
               ></Icon>
             </ChakraLink>
           </Tooltip>

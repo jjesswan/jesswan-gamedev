@@ -31,6 +31,12 @@ const info: WorkProps[] = [
     link: "/ninjamouse",
     image: "/images/NinjaMouse/header.jpg",
   },
+  {
+    title: "Bear Necessiteas",
+    desc: "3D game + game engine built from the ground up",
+    link: "/bear",
+    image: "/images/Bear/header.png",
+  },
 ]
 
 export default info;
