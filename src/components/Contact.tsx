@@ -24,7 +24,7 @@ export default function Contact() {
             Let's get in touch!
           </Text>
           <Flex justifyContent={"center"} gap="1rem">
-          <Tooltip label="Email" placement="bottom" hasArrow> 
+          <Tooltip label="Email" placement="bottom" hasArrow bg="transparent" fontSize={".7rem"}> 
             <ChakraLink href="mailto:jessica_wan@alumni.brown.edu" isExternal>
                <Icon
                 as={RiMailOpenLine as any}
@@ -34,7 +34,7 @@ export default function Contact() {
               ></Icon>
             </ChakraLink>
           </Tooltip>
-          <Tooltip label="LinkedIn" placement="bottom" hasArrow> 
+          <Tooltip label="LinkedIn" placement="bottom" hasArrow bg="transparent" fontSize={".7rem"}> 
             <ChakraLink href="https://www.linkedin.com/in/jessicawan02/" isExternal>
                <Icon
                 as={RiLinkedinBoxLine as any}
@@ -44,7 +44,7 @@ export default function Contact() {
               ></Icon>
             </ChakraLink>
           </Tooltip>
-          <Tooltip label="GitHub" placement="bottom" hasArrow> 
+          <Tooltip label="GitHub" placement="bottom" hasArrow bg="transparent" fontSize={".7rem"}> 
             <ChakraLink href="https://github.com/jjesswan" isExternal>
                <Icon
                 as={RiGithubLine as any}

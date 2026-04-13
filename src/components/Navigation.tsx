@@ -1,9 +1,9 @@
-import { Box, Flex, Icon } from "@chakra-ui/react";
+import { Box, Flex, Icon, Tooltip } from "@chakra-ui/react";
 import { Link} from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { RiHome2Line, RiStackLine, RiFileListLine, RiMailOpenLine } from "react-icons/ri";
 
-import ResumePDF from "../documents/Jessica_Wan_Resume.pdf";
+import ResumePDF from "../documents/Jessica_Wan_Resume.pdf?url";
 
 export default function Navbar() {
   const size = 4;
@@ -23,6 +23,7 @@ export default function Navbar() {
       justifyContent={"space-between"}
       >
 
+        <Tooltip label="Home" placement="left" hasArrow bg="transparent" fontSize={".7rem"}> 
           <HashLink smooth to="/#top">
             
               <Icon
@@ -32,7 +33,8 @@ export default function Navbar() {
                 mb=".5rem"
               ></Icon>
           </HashLink>
-     
+        </Tooltip>
+        <Tooltip label="Work" placement="left" hasArrow bg="transparent" fontSize={".7rem"}> 
           <HashLink smooth to="/#work">
               <Icon
                 as={RiStackLine as any}
@@ -41,14 +43,18 @@ export default function Navbar() {
                 mb=".5rem"
               ></Icon>
           </HashLink>
-          <Link href={ResumePDF} target="_blank">
+          </Tooltip>
+          <Tooltip label="Resume" placement="left" hasArrow bg="transparent" fontSize={".7rem"}> 
+          <a href={ResumePDF} target="_blank" rel="noreferrer">
               <Icon
               as={RiFileListLine as any}
               boxSize={size}
               fill={"white"}
               mb=".5rem"
             ></Icon>
-          </Link>
+          </a>
+          </Tooltip>
+          <Tooltip label="Contact" placement="left" hasArrow bg="transparent" fontSize={".7rem"}> 
           <HashLink smooth to="/#contact">
               <Icon
                 as={RiMailOpenLine as any}
@@ -57,6 +63,7 @@ export default function Navbar() {
                 mb=".5rem"
               ></Icon>
           </HashLink>
+          </Tooltip>
          
        
       </Flex>
