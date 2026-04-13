@@ -1,18 +1,7 @@
 import React from "react";
 import {
-  Button,
-  ButtonGroup,
-  Flex,
   Text,
-  Card,
   Image,
-  CardBody,
-  Heading,
-  Stack,
-  CardFooter,
-  Link,
-  UnorderedList,
-  ListItem,
   Grid,
   GridItem,
   LinkBox,
@@ -41,7 +30,7 @@ export default function WorkItem(props: WorkProps) {
 
     return (
     <LinkBox w="100%" 
-        minH="15rem" 
+        minH="10rem" 
         zIndex={3} 
         transition="all 0.2s ease-in-out"
         _hover={{ transform: 'scale(1.02)', shadow: '2xl' }}
