@@ -31,7 +31,7 @@ export default function WorkPage_OriginTwo() {
         <Flex
           flexDir={"column"}
           minH="100vh"
-          px={{lg: "20rem", base: "1rem"}}
+          px={{xl: "15rem", lg: "20rem", base: "1rem"}}
           overflow={"hidden"}
         >
           

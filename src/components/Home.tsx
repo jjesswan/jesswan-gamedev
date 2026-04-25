@@ -30,7 +30,8 @@ export default function Home() {
         <BackgroundVid src="/images/header_transparent.webm"/>
         <Flex w="100vw" h="100vh" flexDir={"column"} justifyContent="flex-end" alignItems="center" overflow={"hidden"}>
           <Flex
-            justifyContent={"space-between"}
+            justifyContent={"center"}
+            alignItems={"center"}
             w="50rem"
             flexDir={"column"}
             mb="20rem"
