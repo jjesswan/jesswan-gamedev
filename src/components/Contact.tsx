@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Flex, Icon, Text, Tooltip, Link as ChakraLink, IconButton} from "@chakra-ui/react";
+import { Button, ButtonGroup, Flex, Icon, Text, Tooltip, Link as ChakraLink, IconButton, useBreakpointValue} from "@chakra-ui/react";
 import {
   TiSocialLinkedinCircular,
   TiSocialGithubCircular,
@@ -12,6 +12,8 @@ import BlobBg from "../styles/BlobBg";
 
 export default function Contact() {
   const boxSize = 10;
+  const isLargeDevice = useBreakpointValue({ base: false, lg: true });
+  
   return (
     <div id="contact" style={{ position: "relative", zIndex: 1 }}>
         <Flex
@@ -55,7 +57,8 @@ export default function Contact() {
             </ChakraLink>
           </Tooltip>
           </Flex>
-          <Flex w={{base: "100%", lg: "50%"}} display={{lg: "flex", base: "none"}}>
+          {isLargeDevice && (
+            <Flex w={{base: "100%", lg: "50%"}} display={{lg: "flex", base: "none"}}>
                 <video
               loop
               autoPlay
@@ -63,7 +66,8 @@ export default function Contact() {
             >
               <source src="/images/stars.webm" type="video/webm" />
             </video>
-          </Flex>
+          </Flex>)
+      }
         
       </Flex>
     </div>

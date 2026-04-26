@@ -23,11 +23,10 @@ export default function Home() {
   }, []); 
 
   const isLargeDevice = useBreakpointValue({ base: false, lg: true });
-
   
   return (
     <div id="top">
-        <BackgroundVid src="/images/header_transparent.webm"/>
+        {isLargeDevice && <BackgroundVid src="/images/header_transparent.webm"/>}
         <Flex w="100vw" h="100vh" flexDir={"column"} justifyContent="flex-end" alignItems="center" overflow={"hidden"}>
           <Flex
             justifyContent={"center"}

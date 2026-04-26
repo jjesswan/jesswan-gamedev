@@ -47,6 +47,9 @@ export default function WorkPage_Bear() {
             <Text
               variant={"h3"}
               color="white"
+              align={"left"}
+              lineHeight={"80%"}
+              mt="1rem"
             >
               {title}
             </Text>
