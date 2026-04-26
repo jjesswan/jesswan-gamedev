@@ -34,7 +34,7 @@ const info: WorkProps[] = [
  
   {
     title: "Bear Necessiteas",
-    desc: "3D game + game engine built from the ground up",
+    desc: "a 3D animated short",
     link: "/bear",
     image: "/images/Bear/header.png",
   },
