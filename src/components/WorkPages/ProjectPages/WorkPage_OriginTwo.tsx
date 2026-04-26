@@ -11,7 +11,7 @@ import ReactPlayer from 'react-player'
 export default function WorkPage_OriginTwo() {
   const colors = ["#FFF8DE", "#9ECB96", "#B8B2FF"];
   const title= "Origin Two";
-  const desc = "A custom-built 2D Java game engine designed to support full game development workflows, from physics simulation to narrative systems. It emphasizes modular systems, real-time interaction, and extensibility for building complete gameplay experiences.";
+  const desc = "A custom-built 2D Java game engine designed to support full workflows, from physics simulation to narrative systems. It emphasizes modular systems, real-time interaction, and extensibility for building complete gameplay experiences.";
   const links: any[]=[{label:"Github", href:"https://github.com/jjesswan/origin-two"}];
   const header_img = "/images/OriginTwo/header.jpg";
   const product_img = "/images/OriginTwo/demo.mp4";

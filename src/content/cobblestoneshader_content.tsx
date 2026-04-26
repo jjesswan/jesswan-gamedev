@@ -22,7 +22,7 @@ const info: WorkProps[] = [
     image: "/images/Cobblestone/reference.jpg"
   },
    {
-    desc: `The material is built entirely in Maya’s Hypershade using procedural nodes, avoiding any reliance on texture maps. I layered noise functions, masks, and displacement to generate natural stone breakup, height variation, and irregularity in a clean, modular graph.`,
+    desc: `The material is built entirely in Maya’s Hypershade using procedural nodes, avoiding any reliance on texture maps. I layered noise functions, masks, and displacement to generate natural stone breakup, height variation, and irregularity.`,
     header: "Shader Development: Procedural Graph",
     image: "/images/Cobblestone/graph.png"
   },

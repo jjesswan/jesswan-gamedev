@@ -12,7 +12,7 @@ import ReactPlayer from 'react-player'
 export default function WorkPage_Bear() {
   const colors = ["#FFF8DE", "#9ECB96", "#B8B2FF"];
   const title= "Bear Necessiteas";
-  const desc = "a student-directed 3d animated short. my role: creative director, artistic lead, and animator";
+  const desc = "A student-directed 3d animated short. My role: creative director, artistic lead, and animator";
   const links: any[]=[];
   const header_img = "/images/Bear/header.png";
   const product_img = "https://player.vimeo.com/video/1048135105";

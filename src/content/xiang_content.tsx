@@ -12,7 +12,7 @@ const info: WorkProps[] = [
   },
   {
     header: `Custom Prosthetic System`,
-    desc: "The prosthetic hand uses a segmented hierarchy, with each piece parented to it’s respective ball joint to create mechanical motion. This setup preserves rigidity while still allowing expressive animation.",
+    desc: "The prosthetic hand uses a segmented hierarchy, with each piece parented to it’s respective ball joint to create mechanical-like motion.",
     image: "/images/Xiang/hand_demo.gif"
   },
   {
@@ -22,12 +22,12 @@ const info: WorkProps[] = [
   },
   {
     header: `1 Hand v 2 Hand Animation`,
-    desc: "A custom slider blends between one-handed and two-handed staff grips, dynamically adjusting position and orientation without breaking animation flow.",
-    image: "/images/Xiang/model.jpg"
+    desc: "A custom slider blends between one-handed and two-handed staff grips, dynamically adjusting position and orientation of the weapon without breaking animation flow.",
+    image: "/images/Xiang/2hand.png"
   },
   {
     header: `Attack Sequence Game Assets`,
-    desc: "I built three attack animations designed to chain together based on player input. The attack chain allows responsive transitions, drawing from Chinese staff martial arts to maintain believable motion.",
+    desc: "I built three attack animations based off Chinese martial arts, designed to chain together based on player input. From any attack pose, Xiang can easily transition back into a standing or walking state.",
     image: null
   },
 ]
