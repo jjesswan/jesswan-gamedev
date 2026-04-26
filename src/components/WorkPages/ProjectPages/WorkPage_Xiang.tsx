@@ -14,7 +14,7 @@ export default function WorkPage_Xiang() {
   const title= "Xiang";
   const desc = "Xiang is a fully modeled and rigged game-ready character built with a hybrid IK/FK system and animator-friendly controls.";
   const links: any[]=[];
-  const header_img = "/images/Xiang/model.jpg";
+  const header_img = "/images/Xiang/header.jpg";
   const product_img = "/images/Xiang/demo_cut.mp4";
  
   
@@ -32,7 +32,7 @@ export default function WorkPage_Xiang() {
         <Flex
           flexDir={"column"}
           minH="100vh"
-          px={{xl: "15rem", lg: "20rem", base: "1rem"}}
+          px={{xl: "15rem", md: "10rem", base: "1rem"}}
           overflow={"hidden"}
         >
           
@@ -47,6 +47,9 @@ export default function WorkPage_Xiang() {
             <Text
               variant={"h3"}
               color="white"
+              align={"left"}
+              lineHeight={"80%"}
+              my="1rem"
             >
               {title}
             </Text>

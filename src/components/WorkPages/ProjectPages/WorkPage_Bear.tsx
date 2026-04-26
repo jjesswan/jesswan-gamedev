@@ -32,7 +32,7 @@ export default function WorkPage_Bear() {
         <Flex
           flexDir={"column"}
           minH="100vh"
-          px={{xl: "15rem", lg: "20rem", base: "1rem"}}
+          px={{xl: "15rem", md: "10rem", base: "1rem"}}
           overflow={"hidden"}
         >
           
@@ -49,7 +49,7 @@ export default function WorkPage_Bear() {
               color="white"
               align={"left"}
               lineHeight={"80%"}
-              mt="1rem"
+              my="1rem"
             >
               {title}
             </Text>

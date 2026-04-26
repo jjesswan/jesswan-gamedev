@@ -31,7 +31,7 @@ export default function WorkPage_Cobblestone() {
         <Flex
           flexDir={"column"}
           minH="100vh"
-          px={{xl: "15rem", lg: "20rem", base: "1rem"}}
+          px={{xl: "15rem", md: "10rem", base: "1rem"}}
           overflow={"hidden"}
         >
           
@@ -46,7 +46,9 @@ export default function WorkPage_Cobblestone() {
             <Text
               variant={"h3"}
               color="white"
-              align="left"
+              align={"left"}
+              lineHeight={"80%"}
+              my="1rem"
             >
               {title}
             </Text>
