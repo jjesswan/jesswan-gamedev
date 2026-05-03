@@ -16,6 +16,8 @@ export default function WorkPage_Bear() {
   const links: any[]=[];
   const header_img = "/images/Bear/header.png";
   const product_img = "https://player.vimeo.com/video/1048135105";
+
+  const libraries = "Maya, Adobe Premiere Pro";
  
   
   return (
@@ -60,6 +62,21 @@ export default function WorkPage_Bear() {
             >
               {desc}              
             </Text>
+            </Flex>
+            <Flex w={{lg: "40%", base: "80%"}} mt="2rem" gap=".5rem">
+             <Text
+              variant={"type"}
+              color="lightyellow"
+              fontWeight="600"
+            >
+              Tools + Libraries:    
+            </Text>
+            <Text
+              variant={"type"}
+              color="blue"
+            >
+               {libraries}          
+            </Text>    
             </Flex>
             <Flex gap=".5rem" mt={"1rem"}>
               {colors.map((c) => (

@@ -15,6 +15,7 @@ export default function WorkPage_OriginTwo() {
   const links: any[]=[{label:"Github", href:"https://github.com/jjesswan/origin-two"}];
   const header_img = "/images/OriginTwo/header.jpg";
   const product_img = "/images/OriginTwo/demo.mp4";
+  const libraries = "Java, JavaFX";
  
   
   return (
@@ -59,6 +60,21 @@ export default function WorkPage_OriginTwo() {
             >
               {desc}              
             </Text>
+            </Flex>
+            <Flex w={{lg: "40%", base: "80%"}} mt="2rem" gap=".5rem">
+             <Text
+              variant={"type"}
+              color="lightyellow"
+              fontWeight="600"
+            >
+              Tools + Libraries:    
+            </Text>
+            <Text
+              variant={"type"}
+              color="blue"
+            >
+               {libraries}          
+            </Text>    
             </Flex>
             <Flex gap=".5rem" mt={"1rem"}>
               {colors.map((c) => (

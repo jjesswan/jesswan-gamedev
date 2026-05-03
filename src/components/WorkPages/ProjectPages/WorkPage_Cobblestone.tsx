@@ -15,6 +15,7 @@ export default function WorkPage_Cobblestone() {
   const links: any[]=[];
   const header_img = "/images/Cobblestone/header.jpg";
   const product_img = "/images/Cobblestone/moss_demo_optimized.gif";
+  const libraries = "Maya";
  
   
   return (
@@ -59,6 +60,21 @@ export default function WorkPage_Cobblestone() {
             >
               {desc}              
             </Text>
+            </Flex>
+            <Flex w={{lg: "40%", base: "80%"}} mt="2rem" gap=".5rem">
+             <Text
+              variant={"type"}
+              color="lightyellow"
+              fontWeight="600"
+            >
+              Tools + Libraries:    
+            </Text>
+            <Text
+              variant={"type"}
+              color="blue"
+            >
+               {libraries}          
+            </Text>    
             </Flex>
             <Flex gap=".5rem" mt={"1rem"}>
               {colors.map((c) => (
