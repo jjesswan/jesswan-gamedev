@@ -29,7 +29,7 @@ export default function WorkPage_Bear() {
               shift66={[20,50,10,20]} 
               translate33={[20,10]} 
               translate66={[-20,-10]} 
-              mt="150%"
+              mt="50%"
               ml="25%"/>
         <Flex
           flexDir={"column"}
@@ -90,7 +90,39 @@ export default function WorkPage_Bear() {
 
             </Flex>
           </Flex>
+          {/*///////////////////////////// SHOWCASE AREA ////////////////////////*/}
+          <Text variant="h2" color="white" textAlign={"left"} mt="5rem">
+              Product
+          </Text>
+          <Flex w="100%" px={{lg: "5rem", base: "rem"}} flexDir={"column"}>
+            
+           <CornerBrackets color="#eb5c68" size={30} thickness="6px" child={
+            <ReactPlayer src={product_img} controls={true} width="100%"
+             height="500px" style={{padding: "1rem", borderRadius: ".5rem"}} />
+
+            }/>
+
+            {/* ///// LINKS AREA ///// */}
+            <Flex w="100%" justifyContent={"center"} gap="1rem">
+              {links.map((l) => (
+                <ChakraLink href={l.href} isExternal>
+                <Button variant={"solid"} bg="black" mt="1rem" color="red"  
+                _hover={{ transform: 'scale(1.02)', shadow: '2xl', bg:"transparent" }}
+                borderRadius={".5rem"}
+                 transition="all 0.2s ease-in-out"
+                 >
+                  {l.label}
+                </Button>
+                </ChakraLink>
+              ))}
+            </Flex>
+          </Flex>
+          {/* /////////////////////////// END OF SHOWCASE AREA //////////////////////// */}
           {/*///////////////////////////// DETAILED SUMMARY AREA ////////////////////////*/}
+          
+           <Text variant="h2" color="white" textAlign={"left"} mt="5rem">
+              Breakdown
+          </Text>
           <Grid
             templateAreas={{
               lg: `"main"`,
@@ -115,35 +147,8 @@ export default function WorkPage_Bear() {
              
             </GridItem>
           </Grid>
+          {/* /////////////// END OF DETAILED SUMMARY AREA //////////////////////// */}
 
-          {/*///////////////////////////// SHOWCASE AREA ////////////////////////*/}
-          <Flex w="100%" mt="10rem" px={{lg: "5rem", base: "rem"}} flexDir={"column"}>
-            <Text variant="h2" color="white" textAlign={"left"}>
-              Product
-            </Text>
-            <CornerBrackets color="#eb5c68" size={30} thickness="6px" child={
-            <ReactPlayer src={product_img} controls={true} width="100%"
-    height="500px" style={{padding: "1rem", borderRadius: ".5rem"}} />
-
-            }/>
-
-            {/* ///// LINKS AREA ///// */}
-            <Flex w="100%" justifyContent={"center"} gap="1rem">
-              {links.map((l) => (
-                <ChakraLink href={l.href} isExternal>
-                <Button variant={"solid"} bg="black" mt="1rem" color="red"  
-                _hover={{ transform: 'scale(1.02)', shadow: '2xl', bg:"transparent" }}
-                borderRadius={".5rem"}
-                 transition="all 0.2s ease-in-out"
-                 >
-                  {l.label}
-                </Button>
-                </ChakraLink>
-              ))}
-            </Flex>
-
-            
-          </Flex>
           <Flex my="5rem" alignItems={"center"} justifyContent={"center"} gap="1rem" zIndex={2} _hover={{ transform: 'scale(1.02)'}}  transition="all 0.2s ease-in-out">  
            
              <HashLink smooth to="/#work" style={{ display: "flex" , gap: ".5rem", alignItems: "center"}} >
@@ -160,4 +165,3 @@ export default function WorkPage_Bear() {
     </div>
   );
 }
-

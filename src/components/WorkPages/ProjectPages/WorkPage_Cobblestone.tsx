@@ -27,7 +27,7 @@ export default function WorkPage_Cobblestone() {
               shift66={[20,50,10,20]} 
               translate33={[20,10]} 
               translate66={[-20,-10]} 
-              mt="150%"
+              mt="50%"
               ml="25%"/>
         <Flex
           flexDir={"column"}
@@ -88,37 +88,12 @@ export default function WorkPage_Cobblestone() {
 
             </Flex>
           </Flex>
-          {/*///////////////////////////// DETAILED SUMMARY AREA ////////////////////////*/}
-          <Grid
-            templateAreas={{
-              lg: `"main"`,
-              base: `"main"`,
-            }}
-            gridTemplateRows="1fr"
-            gridTemplateColumns={{ lg: "1fr", base: "1fr" }}
-          >
-            {/* <GridItem area={"left"} display="flex" flexDir="column">
-              <Flex bg="blue" h="100%" borderRadius={"20px"}></Flex>
-            </GridItem> */}
-            <GridItem area={"main"} display="flex" flexDir="column" gap="4rem">
-              {info.map((i) => (
-                <WorkPageItem
-                  desc={i.desc}
-                  header={i.header}
-                  image={i.image}
-                />
-              ))
-                }
-              
-             
-            </GridItem>
-          </Grid>
-
           {/*///////////////////////////// SHOWCASE AREA ////////////////////////*/}
-          <Flex w="100%" mt="10rem" px={{lg: "5rem", base: "rem"}} flexDir={"column"}>
-            <Text variant="h2" color="white" textAlign={"left"}>
+          <Text variant="h2" color="white" textAlign={"left"} mt="5rem">
               Product
-            </Text>
+          </Text>
+          <Flex w="100%" px={{lg: "5rem", base: "rem"}} flexDir={"column"}>
+            
             <CornerBrackets color="#eb5c68" size={30} thickness="6px" child={
               <Image
                 objectFit="contain"
@@ -144,9 +119,39 @@ export default function WorkPage_Cobblestone() {
                 </ChakraLink>
               ))}
             </Flex>
-
-            
           </Flex>
+          {/* /////////////////////////// END OF SHOWCASE AREA //////////////////////// */}
+          {/*///////////////////////////// DETAILED SUMMARY AREA ////////////////////////*/}
+          
+           <Text variant="h2" color="white" textAlign={"left"} mt="5rem">
+              Breakdown
+          </Text>
+          <Grid
+            templateAreas={{
+              lg: `"main"`,
+              base: `"main"`,
+            }}
+            gridTemplateRows="1fr"
+            gridTemplateColumns={{ lg: "1fr", base: "1fr" }}
+          >
+            {/* <GridItem area={"left"} display="flex" flexDir="column">
+              <Flex bg="blue" h="100%" borderRadius={"20px"}></Flex>
+            </GridItem> */}
+            <GridItem area={"main"} display="flex" flexDir="column" gap="4rem">
+              {info.map((i) => (
+                <WorkPageItem
+                  desc={i.desc}
+                  header={i.header}
+                  image={i.image}
+                />
+              ))
+                }
+              
+             
+            </GridItem>
+          </Grid>
+          {/* /////////////// END OF DETAILED SUMMARY AREA //////////////////////// */}
+
           <Flex my="5rem" alignItems={"center"} justifyContent={"center"} gap="1rem" zIndex={2} _hover={{ transform: 'scale(1.02)'}}  transition="all 0.2s ease-in-out">  
            
              <HashLink smooth to="/#work" style={{ display: "flex" , gap: ".5rem", alignItems: "center"}} >
@@ -163,4 +168,3 @@ export default function WorkPage_Cobblestone() {
     </div>
   );
 }
-
