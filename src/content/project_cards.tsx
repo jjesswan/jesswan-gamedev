@@ -8,6 +8,12 @@ interface WorkProps {
 
 const info: WorkProps[] = [
   {
+    title: "Toon Shader",
+    desc: "Unreal custom toon shader with dynamic rim lighting and color control",
+    link: "/toonshader",
+    image: "/images/ToonShader/preview.jpg",
+  },
+  {
     title: "Origin Two",
     desc: "2D game + game engine built from the ground up",
     link: "/origintwo",

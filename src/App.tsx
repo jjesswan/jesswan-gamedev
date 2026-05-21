@@ -16,6 +16,7 @@ import WorkPage_Xiang from "./components/WorkPages/ProjectPages/WorkPage_Xiang";
 import WorkPage_OriginTwo from "./components/WorkPages/ProjectPages/WorkPage_OriginTwo";
 import WorkPage_NinjaMouse from "./components/WorkPages/ProjectPages/WorkPage_NinjaMouse";
 import WorkPage_Bear from "./components/WorkPages/ProjectPages/WorkPage_Bear";
+import WorkPage_ToonShader from "./components/WorkPages/ProjectPages/WorkPage_ToonShader";
 
 export const App = () => (
   <ChakraProvider theme={customTheme}>
@@ -32,6 +33,7 @@ export const App = () => (
         <Route path="/origintwo" element={<WorkPage_OriginTwo />} />
         <Route path="/ninjamouse" element={<WorkPage_NinjaMouse />} />
         <Route path="/bear" element={<WorkPage_Bear />} />
+        <Route path="/toonshader" element={<WorkPage_ToonShader />} />
       </Routes>
       <Footer />
     </BrowserRouter>

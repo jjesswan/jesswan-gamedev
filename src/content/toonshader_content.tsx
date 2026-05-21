@@ -6,9 +6,24 @@ interface WorkProps {
 
 const info: WorkProps[] = [
   {
-    header: `Storyboarding`,
-    desc: "I polished the manuscript and led the storyboarding process to solidify a scene-by-scene visual guide before animating and asset creation.",
-    image: "/images/Bear/storyboard.png"
+    header: `Development Process`,
+    desc: "The toon shader is a material function which any shader can call to apply toon shading. It uses a custom lighting model to calculate rim lighting and shadow bands, with parameters for controlling color, brightness, and edge sharpness.",
+    image: "/images/ToonShader/steps.gif"
+  },
+  {
+    header: `1 + 2. Shadow + Highlight Banding`,
+    desc: "Uses light direction from level blueprint during runtime to calculate the angle between the surface normal and light source. This angle is fed into multiple value bins (i.e. shadow, midtones, highlight), which can be adjusted to determine where intermediate values fall.",
+    image: "/images/ToonShader/binning.png"
+  },
+  {
+    header: `3. Rim Lighting`,
+    desc: "Creates alpha mask with transition falloff between hard shadow and hard light, with parameters to control rim width and softness",
+    image: "/images/ToonShader/rimlight.png"
+  },
+  {
+    header: `4-6. Applying Light Models to Input Material`,
+    desc: "Takes either solid color or texture input and applies the toon shading model on top, allowing it to be used across a wide range of materials. Highlight, shadow, and rim lighting color each have their own color and brightness parameter controls.",
+    image: "/images/ToonShader/applying_light.png"
   },
 ]
 
